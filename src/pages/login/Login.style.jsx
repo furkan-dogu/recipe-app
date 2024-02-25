@@ -13,11 +13,17 @@ export const FormContainer = styled(Flex)`
   width: 40rem;
   height: 40rem;
   max-width: 50rem;
-  background: rgba(0, 173, 181, 0.5);
+  background: #40e0d061;
   border-radius: 50%;
   border: 2px solid #e1f1dd;
   padding: 0.5rem;
   flex-direction: column;
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+  }
 `;
 
 export const Header = styled.h1`
