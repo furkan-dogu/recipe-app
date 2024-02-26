@@ -8,7 +8,7 @@ import homeSvg from "../../assets/home.svg"
 const Home = () => {
 
   const [query, setQuery] = useState("");
-  const [selectedMeal, setSelectedMeal] = useState("");
+  const [selectedMeal, setSelectedMeal] = useState("Breakfast");
   const [recipes, setRecipes] = useState(null);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
