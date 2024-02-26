@@ -6,10 +6,9 @@ import Cards from "../../components/cards/Cards";
 import homeSvg from "../../assets/home.svg"
 
 const Home = () => {
-  const mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
 
-  const [query, setQuery] = useState("cheese");
-  const [selectedMeal, setSelectedMeal] = useState(mealType[0]);
+  const [query, setQuery] = useState("");
+  const [selectedMeal, setSelectedMeal] = useState("");
   const [recipes, setRecipes] = useState(null);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
@@ -35,7 +34,6 @@ const Home = () => {
       <Header
         setQuery={setQuery}
         setSelectedMeal={setSelectedMeal}
-        mealType={mealType}
         getData={getData}
       />
 

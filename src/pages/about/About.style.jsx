@@ -3,7 +3,7 @@ import Flex from '../../components/globalStyles/Flex';
 
 export const AboutContainer = styled(Flex)`
   flex-direction: column;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 76px);
   line-height: 2;
   span {
     color: white;

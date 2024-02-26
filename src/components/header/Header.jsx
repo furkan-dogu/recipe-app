@@ -7,11 +7,14 @@ import {
   Select,
 } from "./Header.style";
 
-const Header = ({ setQuery, setSelectedMeal, mealType, getData }) => {
+const Header = ({ setQuery, setSelectedMeal, getData }) => {
+  const mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
+
   const handleSubmit = (e) => {
     e.preventDefault();
     getData()
   };
+
   return (
     <HeaderContainer>
       <MainHeader>Recipe App</MainHeader>

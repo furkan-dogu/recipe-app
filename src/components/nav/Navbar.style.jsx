@@ -3,7 +3,7 @@ import Flex from "../../components/globalStyles/Flex";
 import { Link } from "react-router-dom";
 
 const Nav = styled(Flex)`
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background: ${({ theme }) => theme.colors.navbarBgColor};
 `;
 
